@@ -1,4 +1,4 @@
-// Function to handle form submission
+// Function to handle form submission for Staff Application
 document.getElementById("staffForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent page reload on submit
 
@@ -7,8 +7,7 @@ document.getElementById("staffForm").addEventListener("submit", function(event) 
   const age = document.getElementById("age").value;
   const reason = document.getElementById("reason").value;
 
-  // Here you would normally send the data to a server for storage (using AJAX, etc.)
-  // For now, we'll just log it to the console as an example.
+  // Log application data (for now)
   console.log("Staff Application Submitted:");
   console.log("Name:", name);
   console.log("Age:", age);
@@ -19,7 +18,7 @@ document.getElementById("staffForm").addEventListener("submit", function(event) 
   document.getElementById("staffForm").reset(); // Reset form fields
 });
 
-// Function to check admin password
+// Function to check admin password for viewing applications
 function checkPassword() {
   const adminPassword = document.getElementById("admin-password").value;
 
