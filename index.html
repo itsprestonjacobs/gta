@@ -12,14 +12,16 @@
   <!-- HEADER: Animated Page Intro -->
   <header class="fade-in" data-aos="fade-up">
     <div class="container">
-      <h1>Welcome to Southern Florida State Roleplay (SFSRP)</h1>
-      <p>Your Southern Florida roleplaying adventure awaits! Dive into a world of high-speed chases, criminal syndicates, and sunny beaches.</p>
+      <img src="your-logo.png" alt="SFSRP Logo" class="logo"> <!-- Add your logo here -->
+      <h1>Welcome to Southern Florida State Roleplay</h1>
+      <p>Your sunny adventure awaits in the heart of Florida. Build your story, live the dream!</p>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#join">Join the Server</a></li>
-          <li><a href="#rules">Server Rules</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#rules">Rules</a></li>
           <li><a href="#community">Community</a></li>
+          <li><a href="#staff-application">Staff Application</a></li> <!-- Link to Staff Application -->
         </ul>
       </nav>
     </div>
@@ -29,43 +31,72 @@
   <section id="about" data-aos="fade-up" data-aos-delay="500">
     <div class="container">
       <h2>About Southern Florida State Roleplay</h2>
-      <p>Welcome to SFSRP! Based in the beautiful, sun-soaked state of Florida, our roleplaying server brings the heat with custom jobs, vehicles, and a truly immersive experience.</p>
-      <p>Get ready to dive into a world full of adventures—whether you want to cruise the coastal highways, run a business, or join law enforcement, there's always something to do in Southern Florida!</p>
+      <p>Step into the world of SFSRP, where vibrant city life meets coastal adventures. Whether you're cruising on a beachside highway or involved in an intense roleplay scenario, Southern Florida offers endless opportunities for fun.</p>
+      <p>Our server offers custom jobs, vehicles, and an active community that loves to roleplay in a realistic, immersive environment.</p>
     </div>
   </section>
 
-  <!-- JOIN: Server Information -->
+  <!-- STAFF APPLICATION FORM -->
+  <section id="staff-application" class="container">
+    <h2>Staff Application Form</h2>
+    <p>Interested in joining our staff team? Fill out the form below and tell us why you think you'd be a great fit!</p>
+
+    <!-- Staff Application Form -->
+    <form id="staffForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Your Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="reason">Why do you want to be staff?</label>
+      <textarea id="reason" name="reason" rows="4" required></textarea>
+
+      <button type="submit" class="btn">Submit Application</button>
+    </form>
+
+    <!-- Admin Password Section -->
+    <div id="admin-password-section">
+      <h3>Admin Login to View Applications</h3>
+      <input type="password" id="admin-password" placeholder="Enter Admin Password">
+      <button onclick="checkPassword()">View Applications</button>
+    </div>
+
+    <p id="message"></p>
+  </section>
+
+  <!-- JOIN: How to Join the Server -->
   <section id="join" data-aos="fade-up" data-aos-delay="1000">
     <div class="container">
       <h2>How to Join</h2>
-      <p>Joining SFSRP is easy! Just follow the steps below:</p>
+      <p>Joining the SFSRP community is easy!</p>
       <ol>
-        <li>Install FiveM if you don't have it yet.</li>
-        <li>Search for <strong>Southern Florida State Roleplay</strong> in the FiveM server list.</li>
-        <li>Click <strong>Join</strong> and you're in!</li>
+        <li>Install FiveM (if you haven’t already).</li>
+        <li>Search for <strong>Southern Florida State Roleplay</strong> in the server list.</li>
+        <li>Click <strong>Join</strong> and start your roleplay adventure!</li>
       </ol>
-      <p>Be sure to check out our <a href="#rules" class="btn">Server Rules</a> before logging in!</p>
+      <p>Be sure to review our <a href="#rules" class="btn">Server Rules</a> before jumping in!</p>
     </div>
   </section>
 
-  <!-- RULES: Server Guidelines -->
+  <!-- RULES: Server Rules and Guidelines -->
   <section id="rules" data-aos="fade-up" data-aos-delay="1500">
     <div class="container">
       <h2>Server Rules</h2>
       <ul>
-        <li>Respect all players and staff members.</li>
-        <li>No cheating or exploiting any bugs.</li>
-        <li>Keep your roleplay immersive and fun.</li>
-        <li>Follow the server's guidelines for jobs, vehicles, and roleplay scenarios.</li>
+        <li>Respect fellow players and staff members.</li>
+        <li>No cheating, exploiting, or trolling.</li>
+        <li>Stay in character (IC) at all times.</li>
+        <li>Adhere to server-specific guidelines for vehicles, jobs, and RP situations.</li>
       </ul>
     </div>
   </section>
 
-  <!-- COMMUNITY: Get Involved -->
+  <!-- COMMUNITY: Get Involved with the SFSRP Community -->
   <section id="community" data-aos="fade-up" data-aos-delay="2000">
     <div class="container">
-      <h2>Join the SFSRP Community</h2>
-      <p>Our community is thriving with active members on Discord, social media, and in-game. We host regular events, roleplay sessions, and more!</p>
+      <h2>Join Our Community</h2>
+      <p>Get connected with our amazing community on Discord, participate in events, and stay updated with news and announcements!</p>
       <p><a href="https://discord.gg/yourserverlink" target="_blank" class="btn">Join our Discord</a></p>
     </div>
   </section>
@@ -77,7 +108,9 @@
     </div>
   </footer>
 
+  <!-- JS for Admin Password & Staff Form -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="app.js"></script>
   <script>
     AOS.init();
   </script>
